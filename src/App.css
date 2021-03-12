@@ -1,38 +1,80 @@
-.App {
+.movies {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+#movie {
+  padding: 25px;
+  background-color: #999;
+  border-radius: 10px;
+}
+
+#todo-list {
+  list-style: none;
+}
+
+#todo-list li:nth-of-type(1),
+#todo-list li:nth-of-type(2) {
+  text-decoration: line-through;
+}
+#todo-list li:nth-of-type(3),
+#todo-list li:nth-of-type(4) {
+  background-color: lightblue;
+}
+#todo-list li:nth-of-type(5),
+#todo-list li:nth-of-type(6) {
+  text-decoration: underline;
+}
+#section-cards {
+  padding: 100px 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+#section-cards figure img {
+  width: 100%;
+  height: 200px;
+}
+#section-cards figure {
+  text-align: center;
+}
+#section-cards figure button {
+  border: none;
+  background-color: indianred;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 40px;
+}
+.App > h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#collapse {
+  height: 100vh;
+  padding: 100px 200px;
+  background-color: #050021;
+}
+#collapse div {
+  color: #3ad4aa;
+}
+#collapse div span {
+  font-size: 24px;
+}
+#collapse .Collapsible__contentOuter p {
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Collapsible__trigger div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.App-link {
-  color: #61dafb;
+.plus {
+  margin-left: auto;
+  font-size: 28px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.minus {
+  margin-left: auto;
+  font-size: 28px;
 }
